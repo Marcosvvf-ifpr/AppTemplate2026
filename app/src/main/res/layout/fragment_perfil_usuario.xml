@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    android:background="#FFC107"
     tools:context=".ui.usuario.PerfilUsuarioFragment">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Perfil de Usuário"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +37,8 @@
     <EditText
         android:id="@+id/registerNameEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:background="#9c7e22"
         android:hint="Nome"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,59 +48,79 @@
     <EditText
         android:id="@+id/registerEmailEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#9c7e22"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/registerNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/registerNameEditText" />
 
     <EditText
         android:id="@+id/registerEnderecoEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#9c7e22"
         android:hint="Endereço"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerEmailEditText" />
 
     <EditText
         android:id="@+id/registerPasswordEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#9c7e22"
         android:hint="Senha"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/registerEnderecoEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/registerEnderecoEditText" />
 
     <EditText
         android:id="@+id/registerConfirmPasswordEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#9c7e22"
         android:hint="Confirmar Senha"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/registerPasswordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/registerPasswordEditText" />
 
     <Button
         android:id="@+id/salvarButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
         android:text="Atualizar"
-        app:layout_constraintTop_toBottomOf="@id/registerConfirmPasswordEditText"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/registerConfirmPasswordEditText" />
 
     <Button
         android:id="@+id/sairButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
         android:text="Sair"
-        app:layout_constraintTop_toBottomOf="@id/salvarButton"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/salvarButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

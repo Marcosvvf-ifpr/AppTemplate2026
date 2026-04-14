@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC107"
     tools:context=".ui.dashboard.DashboardFragment">
 
 
@@ -14,8 +15,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="Cadastro de ..."
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Cadastro de Padarias"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +29,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
+        android:background="#9c7e22"
         android:contentDescription="Store Photo"
         android:scaleType="centerCrop"
         android:src="@android:drawable/gallery_thumb"
@@ -39,29 +43,73 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Selecionar Imagem"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFC107"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_item" />
 
 
     <EditText
-        android:id="@+id/enderecoItemEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Endereço"
+        android:id="@+id/nomeItemEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#9c7e22"
+        android:hint="Nome da Padaria"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_select_image" />
 
+    <EditText
+        android:id="@+id/emailItemEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="176dp"
+        android:background="#9c7e22"
+        android:hint="Email para contato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_select_image" />
+
+    <EditText
+        android:id="@+id/enderecoItemEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:background="#9c7e22"
+        android:hint="Endereço"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_select_image" />
+
+    <EditText
+        android:id="@+id/telefoneItemEditText"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="124dp"
+        android:background="#9c7e22"
+        android:hint="Telefone para contato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_select_image" />
 
     <Button
         android:id="@+id/salvarItemButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/black"
         android:text="Salvar"
-        app:layout_constraintTop_toBottomOf="@id/enderecoItemEditText"
+        android:textColor="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/enderecoItemEditText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
