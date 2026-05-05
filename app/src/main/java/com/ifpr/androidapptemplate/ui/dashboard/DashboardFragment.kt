@@ -30,6 +30,9 @@ class DashboardFragment : Fragment() {
     private var _binding: FragmentDashboardBinding? = null
 
     private lateinit var enderecoEditText: EditText
+    private lateinit var nomeItemEditText: EditText
+    private lateinit var emailItemEditText: EditText
+    private lateinit var telefoneItemEditText: EditText
     private lateinit var itemImageView: ImageView
     private var imageUri: Uri? = null
 
@@ -67,6 +70,9 @@ class DashboardFragment : Fragment() {
         salvarButton = view.findViewById(R.id.salvarItemButton)
         selectImageButton = view.findViewById(R.id.button_select_image)
         enderecoEditText = view.findViewById(R.id.enderecoItemEditText)
+        nomeItemEditText = view.findViewById(R.id.nomeItemEditText)
+        emailItemEditText = view.findViewById(R.id.emailItemEditText)
+        telefoneItemEditText = view.findViewById(R.id.telefoneItemEditText)
         //TODO("Capture aqui os outro campos que foram inseridos no layout. Por exemplo, ate
         // o momento so foi capturado o endereco (EditText)")
 
